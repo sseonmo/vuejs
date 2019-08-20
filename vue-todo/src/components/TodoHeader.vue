@@ -1,15 +1,16 @@
 <template>
   <div>
-    header
+    <header>
+      <h1>TODO it!</h1>
+    </header>
   </div>
 </template>
 
-<script>
-export default {
-
+<!-- style scoped 속성은 해당 컴포넌트안에서만 유효하다. -->
+<style scoped>
+h1 {
+  color : #2F3B52;
+  font-weight: 900;
+  margin: 2.5rem 0 1.5rem;
 }
-</script>
-
-<style>
-
 </style>
