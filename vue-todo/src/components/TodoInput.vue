@@ -5,7 +5,7 @@
       </label>
       <!--        <button v-on:click="addTodo">add</button>-->
         <span class="addContainer" v-on:click="addTodo">
-          <i class="fas fa-plus addBtn"></i>
+          <i class="fas fa-plus addBtn"></i>    <!-- awesome icon 사용-->
         </span>
     </div>
 </template>
