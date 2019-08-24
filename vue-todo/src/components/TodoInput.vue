@@ -1,13 +1,12 @@
 <template>
-    <div class="inputBox shadow">
-      <label>
-        <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo" >
-      </label>
-      <!--        <button v-on:click="addTodo">add</button>-->
-        <span class="addContainer" v-on:click="addTodo">
+	<div class="inputBox shadow">
+		<label>
+			<input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo">
+		</label>
+		<span class="addContainer" v-on:click="addTodo">
           <i class="fas fa-plus addBtn"></i>    <!-- awesome icon 사용-->
         </span>
-    </div>
+	</div>
 </template>
 
 <script>
@@ -19,8 +18,14 @@
 		},
 		methods: {
 			addTodo: function () {
+				if (this.newTodoItem === '') return;
+
+				let obj = {
+					completed: false,
+					item: this.newTodoItem
+				};
 				// 저장하는로직
-				localStorage.setItem(this.newTodoItem, this.newTodoItem);
+				localStorage.setItem(this.newTodoItem, JSON.stringify(obj));
 				this.clearInput();
 			},
 			clearInput: function () {
@@ -30,29 +35,33 @@
 	}
 </script>
 <style scoped>
-    input:focus {
-        outline: none;
-    }
-    .inputBox {
-        background: white;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 5px;
-    }
-    .inputBox input {
-        border-style: none;
-        font-size: 0.9rem;
-    }
-    .addContainer {
-        float: right;
-        background: linear-gradient(to right, #6478FB, #8763FB);
-        display: block;
-        width: 3rem;
-        border-radius: 0 5px 5px 0;
-    }
-    .addBtn {
-        color: white;
-        vertical-align: middle;
-    }
+	input:focus {
+		outline: none;
+	}
+
+	.inputBox {
+		background: white;
+		height: 50px;
+		line-height: 50px;
+		border-radius: 5px;
+	}
+
+	.inputBox input {
+		border-style: none;
+		font-size: 0.9rem;
+	}
+
+	.addContainer {
+		float: right;
+		background: linear-gradient(to right, #6478FB, #8763FB);
+		display: block;
+		width: 3rem;
+		border-radius: 0 5px 5px 0;
+	}
+
+	.addBtn {
+		color: white;
+		vertical-align: middle;
+	}
 
 </style>
