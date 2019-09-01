@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<ul>
-			<li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem.item" class="shadow">
+			<li v-for="(todoItem, index) in propsdata" v-bind:key="todoItem.item" class="shadow">
 				<i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted : todoItem.completed}"
 				   v-on:click="toggleComplete(todoItem, index)"></i>
 				<!-- v-bind:class todoItem.complete 값에 따라서 class 적용여부 결정-->
@@ -16,77 +16,59 @@
 </template>
 
 <script>
-export default {
-	data: function() {
-		return {
-			todoItems: [],
-		};
-	},
-	methods: {
-		removeTodo: function(todoItem, index) {
-			localStorage.removeItem(todoItem);
-			this.todoItems.splice(index, 1);
+	export default {
+		props: ['propsdata'],
+		methods: {
+			removeTodo: function (todoItem, index) {
+				this.$emit('removeTodo', todoItem, index);
+				// localStorage.removeItem(todoItem.item);
+				// this.todoItems.splice(index, 1);
+			},
+			toggleComplete: function (todoItem, index) {
+				todoItem.completed = !todoItem.completed;
+				localStorage.removeItem(todoItem.item);
+				localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
+			},
 		},
-		toggleComplete: function(todoItem, index) {
-			todoItem.completed = !todoItem.completed;
-			localStorage.removeItem(todoItem.item);
-			localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
-		},
-	},
-	// todo : 라이프 사이클 정리
-	created: function() {
-		if (localStorage.length > 0) {
-			for (let i = 0; i < localStorage.length; i++) {
-				if (
-					localStorage.key(i) !== 'loglevel:webpack-dev-server' &&
-					localStorage.key(i) !== 'randid'
-				) {
-					this.todoItems.push(
-						JSON.parse(localStorage.getItem(localStorage.key(i))),
-					);
-				}
-			}
-		}
-	},
-};
+	};
 </script>
 
 <style scoped>
-ul {
-	list-style-type: none;
-	padding-left: 0;
-	margin-top: 0;
-	text-align: left;
-}
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin-top: 0;
+		text-align: left;
+	}
 
-li {
-	display: flex;
-	min-height: 50px;
-	height: 50px;
-	line-height: 50px;
-	margin: 0.5rem 0;
-	padding: 0 0.9rem;
-	background: white;
-	border-radius: 5px;
-}
+	li {
+		display: flex;
+		min-height: 50px;
+		height: 50px;
+		line-height: 50px;
+		margin: 0.5rem 0;
+		padding: 0 0.9rem;
+		background: white;
+		border-radius: 5px;
+	}
 
-.checkBtn {
-	line-height: 45px;
-	color: #62acde;
-	margin-right: 5px;
-}
+	.checkBtn {
+		line-height: 45px;
+		color: #62acde;
+		margin-right: 5px;
+	}
 
-.checkBtnCompleted {
-	color: #b3adad;
-}
+	.checkBtnCompleted {
+		color: #b3adad;
+	}
 
-.textCompleted {
-	text-decoration: line-through;
-	color: #b3adad;
-}
+	.textCompleted {
+		text-decoration: line-through;
+		color: #b3adad;
+	}
 
-.removeBtn {
-	margin-left: auto;
-	color: #de4343;
-}
+	.removeBtn {
+		margin-left: auto;
+		color: #de4343;
+	}
 </style>

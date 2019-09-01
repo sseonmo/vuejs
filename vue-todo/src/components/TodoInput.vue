@@ -13,8 +13,8 @@
 	export default {
 		data: function () {
 			return {
-				newTodoItem: ""
-			}
+				newTodoItem: '',
+			};
 		},
 		methods: {
 			addTodo: function () {
@@ -22,17 +22,17 @@
 
 				let obj = {
 					completed: false,
-					item: this.newTodoItem
+					item: this.newTodoItem,
 				};
 				// 저장하는로직
 				localStorage.setItem(this.newTodoItem, JSON.stringify(obj));
 				this.clearInput();
 			},
 			clearInput: function () {
-				this.newTodoItem = "";
-			}
-		}
-	}
+				this.newTodoItem = '';
+			},
+		},
+	};
 </script>
 <style scoped>
 	input:focus {
@@ -53,7 +53,7 @@
 
 	.addContainer {
 		float: right;
-		background: linear-gradient(to right, #6478FB, #8763FB);
+		background: linear-gradient(to right, #6478fb, #8763fb);
 		display: block;
 		width: 3rem;
 		border-radius: 0 5px 5px 0;
@@ -63,5 +63,4 @@
 		color: white;
 		vertical-align: middle;
 	}
-
 </style>
