@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="[19.08.21][Todo App-프로젝트 구현]&#10;TodoHeader 컴포넌트구현&#10;TodoInput 컴포넌트 할일저장 기능구현&#10;TodoInput 컴포넌트 코드정리 및 UI 스타일링&#10;[Todo]&#10;1. md 문서정리">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoInput.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teacher/learn-vue-js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/playground/axios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/a.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/components/AppHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/강의정리.md" beforeDir="false" afterPath="$PROJECT_DIR$/강의정리.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
