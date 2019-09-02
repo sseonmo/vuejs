@@ -19,13 +19,8 @@
 		methods: {
 			addTodo: function () {
 				if (this.newTodoItem === '') return;
-
-				let obj = {
-					completed: false,
-					item: this.newTodoItem,
-				};
 				// 저장하는로직
-				localStorage.setItem(this.newTodoItem, JSON.stringify(obj));
+				this.$emit("addTodoItem", this.newTodoItem);
 				this.clearInput();
 			},
 			clearInput: function () {
