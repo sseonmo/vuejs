@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="[19.08.21][Todo App-프로젝트 구현]&#10;TodoHeader 컴포넌트구현&#10;TodoInput 컴포넌트 할일저장 기능구현&#10;TodoInput 컴포넌트 코드정리 및 UI 스타일링&#10;[Todo]&#10;1. md 문서정리">
-      <change afterPath="$PROJECT_DIR$/teacher/learn-vue-js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/playground/axios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/a.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/components/AppHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-form/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/강의정리.md" beforeDir="false" afterPath="$PROJECT_DIR$/강의정리.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PbQb2d7clTH44wjnrX4FZHAwVX" />
@@ -53,6 +33,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -67,7 +48,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -144,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566323952851</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[19.09.03][Todo App-애플리케이션 구조 개선하기]&#10;완료">
+      <created>1567438285511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567438285511</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[19.08.19] first commit" />
     <MESSAGE value="[19.08.21][Todo App-프로젝트 구현]&#10;TodoHeader 컴포넌트구현&#10;TodoInput 컴포넌트 할일저장 기능구현&#10;TodoInput 컴포넌트 코드정리 및 UI 스타일링&#10;[Todo]&#10;1. md 문서정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[19.08.21][Todo App-프로젝트 구현]&#10;TodoHeader 컴포넌트구현&#10;TodoInput 컴포넌트 할일저장 기능구현&#10;TodoInput 컴포넌트 코드정리 및 UI 스타일링&#10;[Todo]&#10;1. md 문서정리" />
+    <MESSAGE value="[19.09.03][Todo App-애플리케이션 구조 개선하기]&#10;완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="[19.09.03][Todo App-애플리케이션 구조 개선하기]&#10;완료" />
   </component>
 </project>
