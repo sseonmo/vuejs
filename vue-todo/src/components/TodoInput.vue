@@ -5,20 +5,52 @@
 		</label>
 		<span class="addContainer" v-on:click="addTodo">
           <i class="fas fa-plus addBtn"></i>    <!-- awesome icon 사용-->
-        </span>
+		</span>
+		<Modal v-if="showModal" v-on:close="showModal = false">
+			<!--
+				you can use custom content here to overwrite
+				default content
+			-->
+			<h3 slot="header">
+				경고!!
+				<i class="fas fa-times closeModalBtn" @click="showModal = false"></i>
+			</h3>
+
+			<div slot="body">
+				할일을 입력해주세요~
+			</div>
+
+			<p slot="footer">
+			<!--	&lt;Copyright 2019. sseon.&gt;<br>
+				<button v-on:click="closeModel">
+					close
+				</button>-->
+			</p>
+		</Modal>
 	</div>
 </template>
 
 <script>
+
+	import Modal from './common/Modal.vue';
+
 	export default {
 		data: function () {
 			return {
 				newTodoItem: '',
+				showModal: false
 			};
+		},
+		components: {
+			'Modal': Modal
 		},
 		methods: {
 			addTodo: function () {
-				if (this.newTodoItem === '') return;
+				if (this.newTodoItem === '') {
+					this.showModal = !this.showModal;
+					return;
+				}
+
 				// 저장하는로직
 				this.$emit("addTodoItem", this.newTodoItem);
 				this.clearInput();
@@ -26,7 +58,10 @@
 			clearInput: function () {
 				this.newTodoItem = '';
 			},
-		},
+			closeModel: function () {
+				this.showModal = false;
+			}
+		}
 	};
 </script>
 <style scoped>
@@ -57,5 +92,9 @@
 	.addBtn {
 		color: white;
 		vertical-align: middle;
+	}
+
+	.closeModalBtn {
+		color: #42b983;
 	}
 </style>
