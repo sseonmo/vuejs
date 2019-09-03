@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="[19.08.21][Todo App-프로젝트 구현]&#10;TodoHeader 컴포넌트구현&#10;TodoInput 컴포넌트 할일저장 기능구현&#10;TodoInput 컴포넌트 코드정리 및 UI 스타일링&#10;[Todo]&#10;1. md 문서정리">
       <change afterPath="$PROJECT_DIR$/teacher/learn-vue-js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_start_first_class/playground/axios.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue_start_first_class/vue-cli/babel.config.js" afterDir="false" />
@@ -47,12 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1PbQb2d7clTH44wjnrX4FZHAwVX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
