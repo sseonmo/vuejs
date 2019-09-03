@@ -23,7 +23,7 @@
 		},
 		methods: {
 			addOneTiem: function (todoItem) {
-				let obj = {
+				const obj = {
 					completed: false,
 					item: todoItem,
 				};
