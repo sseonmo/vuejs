@@ -16,13 +16,13 @@
 	import TodoFooter from './components/TodoFooter'
 
 	export default {
-		data: function () {
+		data() {
 			return {
 				todoItems: []
 			}
 		},
 		methods: {
-			addOneTiem: function (todoItem) {
+			addOneTiem(todoItem) {
 				const obj = {
 					completed: false,
 					item: todoItem,
@@ -30,19 +30,19 @@
 				localStorage.setItem(todoItem, JSON.stringify(obj));
 				this.todoItems.push(obj);
 			},
-			toggleOntItem: function (todoItem) {
+			toggleOntItem(todoItem) {
 				localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
 			},
-			removeOneItem: function (todoItem, index) {
+			removeOneItem(todoItem, index) {
 				localStorage.removeItem(todoItem.item);
 				this.todoItems.splice(index, 1);
 			},
-			clearAllItem: function () {
+			clearAllItem() {
 				this.todoItems = [];
 				localStorage.clear();
 			}
 		},
-		created: function () {
+		created() {
 			if (localStorage.length > 0) {
 				for (let i = 0; i < localStorage.length; i++) {
 					if (localStorage.key(i) !== 'loglevel:webpack-dev-server' && localStorage.key(i) !== 'randid') {
@@ -54,10 +54,10 @@
 		// 컴포넌트 등록
 		components: {
 			//컴포넌트 태그명 : 컴포넌트 내용
-			'TodoHeader': TodoHeader,
-			'TodoInput': TodoInput,
-			'TodoList': TodoList,
-			'TodoFooter': TodoFooter,
+			TodoHeader,
+			TodoInput,
+			TodoList,
+			TodoFooter
 		}
 	}
 </script>
