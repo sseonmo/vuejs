@@ -50,9 +50,9 @@
 					this.showModal = !this.showModal;
 					return;
 				}
-
 				// 저장하는로직
-				this.$emit("addTodoItem", this.newTodoItem);
+				// this.$emit("addTodoItem", this.newTodoItem);
+				this.$store.commit('addOneItem', this.newTodoItem.trim());
 				this.clearInput();
 			},
 			clearInput() {

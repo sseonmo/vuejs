@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition-group name="list" tag="ul">
-			<li v-for="(todoItem, index) in propsdata" v-bind:key="todoItem.item" class="shadow">
+			<li v-for="(todoItem, index) in this.$store.state.todoItems" v-bind:key="todoItem.item" class="shadow">
 				<i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted : todoItem.completed}"
 				   v-on:click="toggleComplete(todoItem, index)"></i>
 				<!-- v-bind:class todoItem.complete 값에 따라서 class 적용여부 결정-->
@@ -17,14 +17,15 @@
 
 <script>
 	export default {
-		props: ['propsdata'],
 		methods: {
 			removeTodo(todoItem, index) {
-				this.$emit('removeItem', todoItem, index);
+				// this.$emit('removeItem', todoItem, index);
+				this.$store.commit("removeOneItem", {todoItem, index});
 			},
 			toggleComplete(todoItem, index) {
 				todoItem.completed = !todoItem.completed;
-				this.$emit("completeTodo", todoItem);
+				// this.$emit("completeTodo", todoItem);
+				this.$store.commit('toggleOntItem', {todoItem, index});
 			},
 		},
 	};
@@ -68,11 +69,14 @@
 		margin-left: auto;
 		color: #de4343;
 	}
-	 /* 리스트 아이템 트랜지션효과 */
+
+	/* 리스트 아이템 트랜지션효과 */
 	.list-enter-active, .list-leave-active {
 		transition: all 1s;
 	}
-	.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+
+	.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */
+	{
 		opacity: 0;
 		transform: translateY(30px);
 	}
