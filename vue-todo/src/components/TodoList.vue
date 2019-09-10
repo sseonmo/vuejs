@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<transition-group name="list" tag="ul">
-			<li v-for="(todoItem, index) in this.$store.state.todoItems" v-bind:key="todoItem.item" class="shadow">
+			<li v-for="(todoItem, index) in this.storedTodoItems" v-bind:key="todoItem.item" class="shadow">
 				<i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted : todoItem.completed}"
 				   v-on:click="toggleComplete(todoItem, index)"></i>
 				<!-- v-bind:class todoItem.complete 값에 따라서 class 적용여부 결정-->
@@ -16,6 +16,8 @@
 </template>
 
 <script>
+	import { mapGetters } from 'vuex';
+
 	export default {
 		methods: {
 			removeTodo(todoItem, index) {
@@ -27,6 +29,14 @@
 				// this.$emit("completeTodo", todoItem);
 				this.$store.commit('toggleOntItem', {todoItem, index});
 			},
+		},
+		computed: {
+			...mapGetters([ 'storedTodoItems' ])
+			// todoItem() {
+			// 	return this.$store.getters.storedTodoItems;
+			// },
+			// mapGetters 안에 객처를 쓸때는 호출되는 getter의 명을 다르게 쓰려고 할 때 사용함
+			// ...mapGetters({ todoItem : 'storedTooItems' })
 		},
 	};
 </script>
