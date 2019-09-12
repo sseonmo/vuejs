@@ -47,6 +47,7 @@
 		methods: {
 			addTodo() {
 				if (this.newTodoItem === '') {
+					// console.log(this.showModal);
 					this.showModal = !this.showModal;
 					return;
 				}

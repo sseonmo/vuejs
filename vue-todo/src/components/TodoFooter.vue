@@ -1,6 +1,6 @@
 <template>
   <div class="clearAllContainer">
-    <span class="clearAllBtn" v-on:click="clearTodo">
+    <span class="clearAllBtn" @click="this.clearAllItem">
       Clear All
     </span>
 
@@ -8,14 +8,17 @@
 </template>
 
 <script>
-export default {
-  methods:{
-    clearTodo: function () {
-      // this.$emit("clearAll");
-      this.$store.commit('clearAllItem');
+  import { mapMutations} from 'vuex';
+
+  export default {
+    methods:{
+      ...mapMutations(['clearAllItem'])
+      // clearTodo: function () {
+      //   // this.$emit("clearAll");
+      //   this.$store.commit('clearAllItem');
+      // }
     }
   }
-}
 </script>
 
 <style scoped>

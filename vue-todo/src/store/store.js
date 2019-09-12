@@ -36,7 +36,8 @@ export const store = new Vuex.Store({
 			state.todoItems.push(obj);
 		},
 
-		toggleOntItem(state, obj) {
+		toggleOneItem(state, obj) {
+			obj.todoItem.completed = 	!obj.todoItem.completed;
 			localStorage.setItem(obj.todoItem.item, JSON.stringify(obj.todoItem));
 			state.todoItems[obj.index].completed = obj.todoItem.completed;
 		},

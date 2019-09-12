@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/image/vuex_helper_error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-todo/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-todo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoInput.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-todo/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/강의정리.md" beforeDir="false" afterPath="$PROJECT_DIR$/강의정리.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +87,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -149,7 +155,7 @@
       <workItem from="1567868989888" duration="2646000" />
       <workItem from="1567899236020" duration="14015000" />
       <workItem from="1568130982622" duration="645000" />
-      <workItem from="1568154547488" duration="1550000" />
+      <workItem from="1568154547488" duration="8149000" />
     </task>
     <task id="LOCAL-00001" summary="[19.08.19] first commit">
       <created>1566142986315</created>
@@ -207,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567959662640</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[19.09.11][  Vuex-주요기술요소 ]&#10;mapGetters 문법 오류 잡아야함.. ㅡㅡ">
+      <created>1568156380382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568156380382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +248,7 @@
     <MESSAGE value="[19.09.04][ ES6 ] - 향상된 객체리터널&#10;[ vuex ] - 소개" />
     <MESSAGE value="[19.09.08][ Vuex소개, Vuex-주요기술요소 ]&#10;Vuex 소개, 설치, 등록&#10;stated와 getter 소개" />
     <MESSAGE value="[19.09.00][  Vuex-주요기술요소 ]&#10;mutations, action 학습" />
-    <option name="LAST_COMMIT_MESSAGE" value="[19.09.00][  Vuex-주요기술요소 ]&#10;mutations, action 학습" />
+    <MESSAGE value="[19.09.11][  Vuex-주요기술요소 ]&#10;mapGetters 문법 오류 잡아야함.. ㅡㅡ" />
+    <option name="LAST_COMMIT_MESSAGE" value="[19.09.11][  Vuex-주요기술요소 ]&#10;mapGetters 문법 오류 잡아야함.. ㅡㅡ" />
   </component>
 </project>
