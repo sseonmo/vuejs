@@ -3,11 +3,11 @@
 		<transition-group name="list" tag="ul">
 			<li v-for="(todoItem, index) in this.storedTodoItems" v-bind:key="todoItem.item" class="shadow">
 				<i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted : todoItem.completed}"
-				   v-on:click="this.toggleComplete({todoItem, index})"></i>
+				   @click="toggleOneItem({todoItem, index})"></i>
 				<!-- v-bind:class todoItem.complete 값에 따라서 class 적용여부 결정-->
 				<!-- todo : v-bind 정리 -->
 				<span v-bind:class="{textCompleted: todoItem.completed}">{{ todoItem.item }}</span>
-				<span class="removeBtn" v-on:click="this.removeTodo({todoItem, index})">
+				<span class="removeBtn" @click="removeOneItem({todoItem, index})">
 					<i class="fas fa-trash-alt"></i>
 				</span>
 			</li>
@@ -20,10 +20,7 @@ import { mapGetters, mapMutations } from 'vuex';
 
 export default {
 	methods: {
-		...mapMutations({
-			removeTodo: 'removeOneItem',
-			toggleComplete: 'toggleOneItem'
-		}),
+		...mapMutations(['removeOneItem', 'toggleOneItem']),
 	// removeTodo(todoItem, index) {
 	// 	// this.$emit('removeItem', todoItem, index);
 	// 	this.$store.commit('removeOneItem', { todoItem, index });
