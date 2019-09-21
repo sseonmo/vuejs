@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="[19.09.13][ Vuex - helper function ]&#10;완료">
+    <list default="true" id="7e81bc27-ddf3-44c1-8e98-1e1f8dc17328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LectureSummary.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/components/TodoList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todo/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-todo/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todo/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/강의정리.md" beforeDir="false" afterPath="$PROJECT_DIR$/강의정리.md" afterDir="false" />
     </list>
     <list id="b7014f38-67a4-4eb0-b172-cbf6c384689b" name="module fail" comment="" />
@@ -72,7 +72,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-todo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="" />
@@ -83,11 +83,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\intellij_workspace\vue\vuejs\vue-todo\src\assets" />
     </key>
   </component>
@@ -117,6 +118,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -126,6 +130,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -152,6 +161,9 @@
       <workItem from="1567899236020" duration="14015000" />
       <workItem from="1568130982622" duration="645000" />
       <workItem from="1568154547488" duration="8149000" />
+      <workItem from="1568932891947" duration="15000" />
+      <workItem from="1569075096482" duration="2231000" />
+      <workItem from="1569078083246" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="[19.08.19] first commit">
       <created>1566142986315</created>
@@ -216,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568156380382</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[19.09.15][ Vuex - 프로젝트 구조화 및 모듈화 ]&#10;완료&#10;[todo]&#10;1. 강의 문서정리">
+      <created>1568567212804</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568567212804</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +264,7 @@
     <MESSAGE value="[19.09.08][ Vuex소개, Vuex-주요기술요소 ]&#10;Vuex 소개, 설치, 등록&#10;stated와 getter 소개" />
     <MESSAGE value="[19.09.00][  Vuex-주요기술요소 ]&#10;mutations, action 학습" />
     <MESSAGE value="[19.09.11][  Vuex-주요기술요소 ]&#10;mapGetters 문법 오류 잡아야함.. ㅡㅡ" />
-    <option name="LAST_COMMIT_MESSAGE" value="[19.09.11][  Vuex-주요기술요소 ]&#10;mapGetters 문법 오류 잡아야함.. ㅡㅡ" />
+    <MESSAGE value="[19.09.15][ Vuex - 프로젝트 구조화 및 모듈화 ]&#10;완료&#10;[todo]&#10;1. 강의 문서정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[19.09.15][ Vuex - 프로젝트 구조화 및 모듈화 ]&#10;완료&#10;[todo]&#10;1. 강의 문서정리" />
   </component>
 </project>
